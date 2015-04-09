@@ -1,0 +1,35 @@
+{% extends "broadcast/base.html" %}
+{% block content %}
+    <div align="center">
+        {% comment %}<img src="/static/images/helping_hand.png" width="90%">{% endcomment %}
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+                fjs.parentNode.insertBefore(js, fjs);}
+            (document, 'script', 'facebook-jssdk'));
+        </script>
+        <div class="fb-post" data-href="https://www.facebook.com/video.php?v=916616911723175" data-width="500">
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/video.php?v=916616911723175">
+                    <p>The Sensational H4P Crew Presents:         *************          LOVE 101         *************</p>
+                    Posted by <a href="https://www.facebook.com/h4pcrew">H4P Crew</a> on
+                    <a href="https://www.facebook.com/video.php?v=916616911723175">Friday, 20 February 2015</a>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div style="height: 20px"></div>
+
+    <div align="center">
+        {% comment %}
+            <a href="http://h4pcrew.net" class="btn btn-primary" style="color: #ffffff">Visit Our Website</a>
+        {% endcomment %}
+        <a href="/purchase"
+           class="btn btn-primary" style="color: #ffffff">Purchase Ticket</a>
+    </div>
+{% endblock %}
